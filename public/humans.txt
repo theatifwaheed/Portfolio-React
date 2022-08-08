@@ -1,0 +1,33 @@
+__  __  __
+\ \ \ \ \/
+ \ \/\ \
+  \/  \/
+
+The humans.txt file explains the team, technology,
+and graphic assets behind this site humanstxt.org.
+
+_______________________________________________________________________________
+
+DESIGNER | デザイナー
+
+Mohammad Haris Zia
+Hand crafted design & web development
+
+Design tools:
+Figma
+Photoshop
+Blender
+
+https://twitter.com/mohammadharisz2
+https://github.com/MohammadHarisZia
+
+_______________________________________________________________________________
+
+TECHNOLOGY | テクノロジー
+
+React
+Next.js
+Three.js
+Framer Motion
+
+

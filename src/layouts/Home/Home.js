@@ -2,10 +2,15 @@ import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg'
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import blogHome from 'assets/Blog-Home.jpg';
+import blogHomelarge from 'assets/Blog-Home-large.jpg';
+import pakmediclarge from 'assets/PakMedic-large.jpg';
 import pakmedic from 'assets/PakMedic.jpg';
-import streetfest from 'assets/StreetFest.jpg';
+import streetfestlarge from 'assets/StreetFest.jpg';
+import streetfest2large from 'assets/StreetFest2-large.jpg';
+import streetfest from 'assets/StreetFest-large.jpg';
 import streetfest2 from 'assets/StreetFest2.jpg';
 import spaceX from 'assets/SpaceX.jpg';
+import spaceXlarge from 'assets/SpaceX-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
@@ -89,7 +94,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [pakmedic, pakmedic],
+              srcSet: [pakmedic, pakmediclarge],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -110,11 +115,11 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [streetfest, streetfest],
+              srcSet: [streetfest, streetfestlarge],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [streetfest2, streetfest2],
+              srcSet: [streetfest2, streetfest2large],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
@@ -134,7 +139,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [blogHome, blogHome],
+              srcSet: [blogHome, blogHomelarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],
@@ -156,7 +161,7 @@ export const Home = () => {
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [spaceX, spaceX],
+              srcSet: [spaceX, spaceXlarge],
               placeholder: sliceTexturePlaceholder,
             },
           ],

@@ -11,7 +11,14 @@
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^7.5.0",
     "postcss": "^8.4.13",
-    "@svgr/webpack": "^6.2.1"
+    "@svgr/webpack": "^6.2.1",
+    "eslint": "^8.20.0",
+    "eslint-config-next": "^12.2.3",
+    "globby": "^13.1.2",
+    "stylelint": "^14.9.1",
+    "stylelint-config-css-modules": "^4.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^26.0.0"
   },
   "dependencies": {
     "fathom-client": "^3.5.0",

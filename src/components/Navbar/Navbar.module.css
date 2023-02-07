@@ -30,6 +30,7 @@
   z-index: var(--zIndex2);
 
   @media (--mediaMobile) {
+    margin-left: var(--space2XL);
     padding-bottom: var(--spaceS);
   }
 }

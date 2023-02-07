@@ -3,6 +3,12 @@
   transition: fill var(--durationL) ease;
 }
 
+.cls {
+  stroke: var(--colorTextTitle);
+  stroke-miterlimit: 10;
+  stroke-width: 0.25px;
+}
+
 .highlight {
   fill: rgb(var(--rgbAccent));
   opacity: 0;

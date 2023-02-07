@@ -1,17 +1,20 @@
-__  __  __
-\ \ \ \ \/
- \ \/\ \
-  \/  \/
+|        |
+| \      |
+|  \     |
+|   \____|
+|        | 
+|        |
+
 
 The humans.txt file explains the team, technology,
 and graphic assets behind this site humanstxt.org.
 
 _______________________________________________________________________________
 
-DESIGNER | デザイナー
+DEVELOPER | DESIGNER 
 
 Mohammad Haris Zia
-Hand crafted design & web development
+Hand crafted design & Full Stack development
 
 Design tools:
 Figma
@@ -23,9 +26,11 @@ https://github.com/MohammadHarisZia
 
 _______________________________________________________________________________
 
-TECHNOLOGY | テクノロジー
+TECHNOLOGY 
 
-React
+MERN Stack
+React Native
+Python
 Next.js
 Three.js
 Framer Motion

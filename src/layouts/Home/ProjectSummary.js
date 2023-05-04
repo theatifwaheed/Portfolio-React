@@ -91,7 +91,7 @@ export const ProjectSummary = ({
     <div className={styles.preview}>
       {model.type === 'laptop-left' && (
         <>
-          {renderKatakana('laptop', visible)}
+          {/* {renderKatakana('laptop', visible)} */}
           <div className={styles.model2} data-device="laptop">
             <Model
               alt={model.alt}
@@ -114,7 +114,7 @@ export const ProjectSummary = ({
 
       {model.type === 'laptop' && (
         <>
-          {renderKatakana('laptop', visible)}
+          {/* {renderKatakana('laptop', visible)} */}
           <div className={styles.model} data-device="laptop">
             <Model
               alt={model.alt}
@@ -136,7 +136,7 @@ export const ProjectSummary = ({
       )}
       {model.type === 'phone' && (
         <>
-          {renderKatakana('phone', visible)}
+          {/* {renderKatakana('phone', visible)} */}
           <div className={styles.model} data-device="phone">
             <Model
               alt={model.alt}

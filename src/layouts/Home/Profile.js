@@ -88,7 +88,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
                   alt="Me standing in front of the Torii on Miyajima, an island off the coast of Hiroshima in Japan"
                 />
-                <svg
+                {/* <svg
                   aria-hidden="true"
                   width="135"
                   height="765"
@@ -97,7 +97,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   data-visible={visible}
                 >
                   <use href={`${profileKatakana}#katakana-profile`} />
-                </svg>
+                </svg> */}
               </div>
             </div>
           </div>

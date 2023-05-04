@@ -3,8 +3,11 @@ import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg'
 import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 import blogHome from 'assets/Blog-Home.jpg';
 import blogHomelarge from 'assets/Blog-Home-large.jpg';
-import pakmediclarge from 'assets/PakMedic-large.jpg';
-import pakmedic from 'assets/PakMedic.jpg';
+import Omnifood from 'assets/Omnifood.jpg';
+import Twitter from 'assets/Twitter.jpg';
+import Airbnb from 'assets/Airbnb.jpg';
+import pakmedicMobile from 'assets/pakmedic.png';
+import pakmedicMobile2 from 'assets/pakmedic2.png';
 import alphatalk from 'assets/Alphatalk.jpg';
 import vikiHome from 'assets/Viki-Home.jpg';
 import vikiAgent from 'assets/Viki-Agent.jpg';
@@ -13,7 +16,7 @@ import bloopDetails from 'assets/Bloop-Details.jpg';
 
 import spaceX from 'assets/SpaceX.jpg';
 import spaceXlarge from 'assets/SpaceX-large.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
+// import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -34,6 +37,10 @@ export const Home = () => {
   const projectFour = useRef();
   const projectFive = useRef();
   const projectSix = useRef();
+  const projectSeven = useRef();
+  const projectEight = useRef();
+  const projectNine = useRef();
+
   const details = useRef();
 
   useEffect(() => {
@@ -45,6 +52,9 @@ export const Home = () => {
       projectFour,
       projectFive,
       projectSix,
+      projectSeven,
+      projectEight,
+      projectNine,
       details,
     ];
 
@@ -103,12 +113,57 @@ export const Home = () => {
         buttonText="Coming Soon"
         buttonLink="https://github.com/FA19-BCS-Pakmedic"
         model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          type: 'phone',
+          alt: 'Pakmedic',
           textures: [
             {
-              srcSet: [pakmedic, pakmediclarge],
-              placeholder: sprTexturePlaceholder,
+              srcSet: [pakmedicMobile, pakmedicMobile],
+              placeholder: gamestackTexturePlaceholder,
+            },
+            {
+              srcSet: [pakmedicMobile2, pakmedicMobile2],
+              placeholder: gamestackTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectSeven.current)}
+        index={2}
+        alternate
+        title="AirBnb Clone"
+        description="Full Stack Airbnb Clone built using Next.js 13 using new experimental app directory, server and client components and latest changes in the framework."
+        buttonText="View Web Application"
+        buttonLink="https://airbnbclone-haris.vercel.app"
+        model={{
+          type: 'laptop-left',
+          alt: 'AirBnb Clone',
+          textures: [
+            {
+              srcSet: [Airbnb, Airbnb],
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-8"
+        sectionRef={projectEight}
+        visible={visibleSections.includes(projectEight.current)}
+        index={3}
+        title="Twitter Clone"
+        description=" Full Stack Web app built using built using Next Js, Tailwind CSS, Prisma, MongoDB & Next Auth."
+        buttonText="View Web Application"
+        buttonLink="https://twitter-clone-haris.vercel.app"
+        model={{
+          type: 'laptop',
+          alt: 'Twitter Clone',
+          textures: [
+            {
+              srcSet: [Twitter, Twitter],
+              placeholder: sliceTexturePlaceholder,
             },
           ],
         }}
@@ -118,14 +173,14 @@ export const Home = () => {
         alternate
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
-        index={2}
+        index={4}
         title="A Wiki application for Valorant"
         description="Solving the problem to provide wiki for Valorant on a mobile platform, a game that is growing in popularity."
         buttonText="View Mockups"
         buttonLink="https://www.figma.com/file/1nZBvWIhJJlJ0GCJr8h60i/Viki-A-Valorant-WIKI?node-id=1%3A25&t=prQePWjc9crdQiXn-1"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'Viki, A Valorant Wiki',
           textures: [
             {
               srcSet: [vikiHome, vikiHome],
@@ -143,7 +198,7 @@ export const Home = () => {
         id="project-3"
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
-        index={3}
+        index={5}
         title="An NFT based Community for Artists and Collectors"
         description="A social platform for artists and collectors to showcase their work and interact with each other."
         buttonText="View Live Deployment"
@@ -165,14 +220,14 @@ export const Home = () => {
         alternate
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
-        index={4}
+        index={6}
         title="An NFC based Social Link Sharing Platform"
         description="A one stop solution for all your social media links, a platform that allows you to share your social media links with a single tap."
         buttonText="View Application"
         buttonLink="https://github.com/MohammadHarisZia/Bloop"
         model={{
           type: 'phone',
-          alt: 'App login screen',
+          alt: 'NFC React Native App',
           textures: [
             {
               srcSet: [bloopHome, bloopHome],
@@ -190,14 +245,14 @@ export const Home = () => {
         id="project-5"
         sectionRef={projectFive}
         visible={visibleSections.includes(projectFive.current)}
-        index={5}
+        index={7}
         title="Blog CMS With Admin Support and Stripe API"
         description="Engaging the writers with a responsive and dynamic CMS, an Admin Panel for the CEO to manage resources. "
         buttonText="View project"
         buttonLink="https://github.com/MohammadHarisZia/Laravel_project-Content-Blog-Management-System"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Blog CMS',
           textures: [
             {
               srcSet: [blogHome, blogHomelarge],
@@ -212,17 +267,38 @@ export const Home = () => {
         alternate
         sectionRef={projectSix}
         visible={visibleSections.includes(projectSix.current)}
-        index={6}
+        index={8}
         title="Falcon 9 Space X Prediction Using Python"
         description="An End to End Data Science Project starting from EDA to Prediction of the Launch with an Iterative approach and descriptive Data Visualizations to Present the Data Story."
         buttonText="View project"
         buttonLink="https://github.com/MohammadHarisZia/Falcon9-SpaceX-Launch-DataScienceProject"
         model={{
           type: 'laptop-left',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Falcon 9 Space X Prediction Using Python',
           textures: [
             {
               srcSet: [spaceX, spaceXlarge],
+              placeholder: sliceTexturePlaceholder,
+            },
+          ],
+        }}
+      />
+
+      <ProjectSummary
+        id="project-9"
+        sectionRef={projectNine}
+        visible={visibleSections.includes(projectNine.current)}
+        index={9}
+        title="OmniFood, A healthy food delivery service Landing Page"
+        description="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
+        buttonText="View Deployment"
+        buttonLink="https://omnifood-hariszia.netlify.app"
+        model={{
+          type: 'laptop',
+          alt: 'Omnifood',
+          textures: [
+            {
+              srcSet: [Omnifood, Omnifood],
               placeholder: sliceTexturePlaceholder,
             },
           ],

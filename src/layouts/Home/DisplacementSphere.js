@@ -83,7 +83,7 @@ export const DisplacementSphere = props => {
     };
 
     startTransition(() => {
-      geometry.current = new SphereBufferGeometry(32, 64, 64);
+      geometry.current = new SphereBufferGeometry(32, 32, 32);
       sphere.current = new Mesh(geometry.current, material.current);
       sphere.current.position.z = 0;
       sphere.current.modifier = Math.random();
